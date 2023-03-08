@@ -3,8 +3,8 @@
     "description": "This package provides ArraySubset and related asserts once deprecated in PHPUnit 8",
     "type": "library",
     "require": {
-        "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "php": "^5.4 || ^7.0 || ^8.0"
+        "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6 || ^7 || ^8 || ^9 || ^10",
+        "php": "^5.4 || ^7 || ^8"
     },
     "license": "MIT",
     "authors": [
@@ -23,6 +23,11 @@
     "autoload-dev": {
         "psr-4": {
             "DMS\\PHPUnitExtensions\\ArraySubset\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
